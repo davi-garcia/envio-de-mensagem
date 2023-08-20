@@ -12,7 +12,7 @@
 
         <form action="https://api.staticforms.xyz/submit" method="post">
             <label>Nome:</label>
-            <input type="text" name="name" placeholder="Your Name" autocomplete="off">
+            <input type="text" name="name" placeholder="Your Name" autocomplete="off" onkeypress="return event.charCode > 96 && event.charCode < 123 || event.charCode > 64 && event.charCode < 91 || event.charCode == 32 ">
             <label>E-mail:</label>
             <input type="text" name="email" placeholder="Your Email" />
             <label>Mensagem:</label>
