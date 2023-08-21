@@ -1,9 +1,7 @@
-/* ---- particles.js config ---- */
-
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 120,
+      "value": 200,
       "density": {
         "enable": true,
         "value_area": 800
@@ -112,7 +110,6 @@ particlesJS("particles-js", {
 });
 
 
-/* ---- stats.js config ---- */
 
 var count_particles, stats, update;
 stats = new Stats;
