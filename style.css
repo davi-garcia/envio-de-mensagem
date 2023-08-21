@@ -1,133 +1,133 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #101026;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #101026;
+
 }
 section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;   
-    padding: 10px 45px;
-    background: rgb(1, 250, 76);
-    width: 500px;
-    box-shadow: 5px 10px 18px blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;   
+  padding: 10px 45px;
+  background: rgb(1, 250, 76);
+  width: 500px;
+  box-shadow: 5px 10px 18px blue;
 }
 section h2{
-    color: #f5f5f5f5;
-    font-size: 2.5rem;
-    margin: 2rem;
+  color: #f5f5f5f5;
+  font-size: 2.5rem;
+  margin: 2rem;
 }
 
 section form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
 }
 form label {
-  color: #f5f5f5f5;
-  font-size: 17px;
-  margin-bottom: 4px;
+color: #f5f5f5f5;
+font-size: 17px;
+margin-bottom: 4px;
 }
 form input{
-    padding: 15px;
-    outline: none;
-    border: 0;
-    margin-bottom: 20px;
-    font-size: 15px;
-    transition: all 0.5s;
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: all 0.5s;
 }
 form input:focus{
-    border-radius: 16px;
+  border-radius: 16px;
 
 }
 form textarea{
-  padding: 10px;
-  outline: none;
-  border: 0;
-  font-size: 15px;
-  margin-bottom: 30px;
-  transition: all 0.5s;
+padding: 10px;
+outline: none;
+border: 0;
+font-size: 15px;
+margin-bottom: 30px;
+transition: all 0.5s;
 }
 form textarea:focus{
-  border-radius: 16px;
+border-radius: 16px;
 }
 form button{
-    padding: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    background: transparent;
-    border: 2px solid #f5f5f5;
-    color: #f5f5f5f5;
-    transition: all is;
-    margin-bottom: 20px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5f5;
+  transition: all is;
+  margin-bottom: 20px;
 }
 form button:hover {
-    background: #f5f5f5f5;
-    color: #101026;
-    border-radius: 16px;
+  background: #f5f5f5f5;
+  color: #101026;
+  border-radius: 16px;
 
 }
 .container{
-  margin: auto;
+margin: 0 auto;
+position: absolute;
 }
 canvas {
-    display: block;
-    vertical-align: bottom;
+  display: block;
+  vertical-align: bottom;
 }
-    
+  
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
-    
+  
 .count-particles{
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
-  
+
 .js-count-particles{
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
-  
+
 #stats,
 .count-particles{
-    -webkit-user-select: none;
+  -webkit-user-select: none;
 }
-  
+
 #stats{
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
 }
-  
+
 .count-particles{
-    border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
