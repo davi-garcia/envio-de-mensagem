@@ -10,7 +10,9 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
 
 }
 fieldset{
@@ -19,7 +21,7 @@ fieldset{
     justify-content: center;
     flex-direction: column;
     padding: 60px 120px;
-    background: #1d1d2z;
+    background: black;
     witdh: 500px
     border: 2px solid;
     box-shadow: 5px 10px 18px blue;
@@ -53,11 +55,12 @@ form label {
     margin-bottom: 4px;
 }
 form button{
-    padding: 15px;
+    padding: 10px;
+    width: 150px;
     cursor: pointer;
     font-size: 16px;
     border: 2px solid;
-    color: #f5f5f5;
+    color: #000000;
     transition: all is;
     margin-bottom: 20px;
 }
@@ -67,3 +70,67 @@ form button:hover {
     border-radius: 16px;
 
 }
+textarea {
+    width: justify; /* largura desejada */
+    height: 150px; /* altura desejada */
+    text-align: justify
+  }
+.textarea-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+.js-count-particles{
+    font-size: 1.1em;
+  }
+  
+#stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+#stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+.count-particles{
+    border-radius: 0 0 3px 3px;
+  }

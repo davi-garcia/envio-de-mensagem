@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="particles-js.js"></script>
     <title>Envio de Mensagem</title>
 </head>
 <body>
@@ -12,18 +13,23 @@
 
         <form action="https://api.staticforms.xyz/submit" method="post">
             <label>Nome:</label>
-            <input type="text" name="name" placeholder="Your Name" autocomplete="off" onkeypress="return event.charCode > 96 && event.charCode < 123 || event.charCode > 64 && event.charCode < 91 || event.charCode == 32 ">
+            <input type="text" name="name" placeholder="Seu nome" autocomplete="off" onkeypress="return event.charCode > 96 && event.charCode < 123 || event.charCode > 64 && event.charCode < 91 || event.charCode == 32 ">
             <label>E-mail:</label>
-            <input type="text" name="email" placeholder="Your Email" />
+            <input type="text" name="email" placeholder="Seu E-mail" />
             <label>Mensagem:</label>
-            <textarea name="message"></textarea>
-            <input type="hidden" name="accessKey" value="74f5fa3d-d8a3-4304-8dba-196e37374efb">
+            <textarea class="justified-textarea" name="Mensagem"></textarea>
+            <input type="hidden" name="accessKey" value="74f5fa3d-d8a3-4304-8dba-196e37374efb"><br>
             <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
             <button type="submit">Enviar</button>
         </form>
 
     </fieldset>
 
+<div id="particles-js"></div>
 
+<!-- stats - count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
 </body>
 </html>
