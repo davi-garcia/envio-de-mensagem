@@ -12,17 +12,18 @@
     <div class="container">
         <fieldset>
             <section>
-                <h2>Contato</h2>
-                <label>Nome:</label>
-                <input type="text" name="name" placeholder="Seu nome" autocomplete="off" onkeypress="return event.charCode > 96 && event.charCode < 123 || event.charCode > 64 && event.charCode < 91 || event.charCode == 32 " required>
-                <label>E-mail:</label>
-                <input type="text" name="email" placeholder="Seu E-mail" required />
-                <label>Mensagem:</label><br>
-                <textarea class="justified-textarea" name="Mensagem" required></textarea>
-                <input type="hidden" name="accessKey" value="74f5fa3d-d8a3-4304-8dba-196e37374efb">
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
-                <form action="https://api.staticforms.xyz/submit" method="post"></form><br>
-                <button type="submit">Enviar</button>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <h2>Contato</h2>
+                    <label>Nome:</label>
+                    <input type="text" name="name" placeholder="Seu nome" autocomplete="off" onkeypress="return event.charCode > 96 && event.charCode < 123 || event.charCode > 64 && event.charCode < 91 || event.charCode == 32 " required>
+                    <label>E-mail:</label>
+                    <input type="text" name="email" placeholder="Seu E-mail" required />
+                    <label>Mensagem:</label><br>
+                    <textarea class="justified-textarea" name="Mensagem" required></textarea>
+                    <input type="hidden" name="accessKey" value="74f5fa3d-d8a3-4304-8dba-196e37374efb">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    <button type="submit" value="Submit">Enviar</button>
+                </form>
             </section>
         </fieldset>
     </div>
